@@ -74,7 +74,6 @@ const getIndex = (row, column) => {
 const drawCells = () => {
   const cellsPtr = universe.cells();
 
-  // This is updated!
   const cells = new Uint8Array(memory.buffer, cellsPtr, width * height / 8);
 
   ctx.beginPath();
